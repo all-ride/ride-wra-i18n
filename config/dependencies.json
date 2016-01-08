@@ -1,0 +1,54 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "ride\\library\\http\\jsonapi\\JsonApiResourceAdapter",
+            "class": "ride\\web\\rest\\jsonapi\\LocaleJsonApiResourceAdapter",
+            "id": "locales",
+            "tags": "app"
+        },
+        {
+            "interfaces": "ride\\library\\http\\jsonapi\\JsonApiResourceAdapter",
+            "class": "ride\\web\\rest\\jsonapi\\TranslationJsonApiResourceAdapter",
+            "id": "translations",
+            "tags": "app"
+        },
+        {
+            "class": "ride\\web\\rest\\controller\\LocaleController",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "api",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\http\\jsonapi\\JsonApi",
+                                "id": "app"
+                            }
+                        }
+                    ]
+                },
+                "setI18n"
+            ]
+        },
+        {
+            "class": "ride\\web\\rest\\controller\\TranslationController",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "api",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\http\\jsonapi\\JsonApi",
+                                "id": "app"
+                            }
+                        }
+                    ]
+                },
+                "setI18n"
+            ]
+        }
+    ]
+}
