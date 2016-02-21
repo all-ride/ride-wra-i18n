@@ -92,7 +92,7 @@ class TranslationController extends AbstractResourceJsonApiController {
 
                     $locales[$index] = $locale;
                 } catch (LocaleNotFoundException $exception) {
-                    $this->log->logException($exception);
+                    $this->getLog()->logException($exception);
 
                     unset($locales[$index]);
                 }
@@ -239,7 +239,7 @@ class TranslationController extends AbstractResourceJsonApiController {
                 try {
                     $value = $this->i18n->getLocale($id);
                 } catch (LocaleNotFoundException $exception) {
-                    $this->log->logException($exception);
+                    $this->getLog()->logException($exception);
                 }
 
                 break;

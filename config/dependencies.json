@@ -19,7 +19,7 @@
                     "method": "__construct",
                     "arguments": [
                         {
-                            "name": "api",
+                            "name": "jsonApi",
                             "type": "dependency",
                             "properties": {
                                 "interface": "ride\\library\\http\\jsonapi\\JsonApi",
@@ -38,7 +38,7 @@
                     "method": "__construct",
                     "arguments": [
                         {
-                            "name": "api",
+                            "name": "jsonApi",
                             "type": "dependency",
                             "properties": {
                                 "interface": "ride\\library\\http\\jsonapi\\JsonApi",
