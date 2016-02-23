@@ -1,0 +1,81 @@
+{
+    "routes": [
+        {
+            "path": "/api/v1/locales",
+            "controller": "ride\\web\\rest\\controller\\LocaleController",
+            "action": "indexAction",
+            "methods": "GET",
+            "id": "api.locales.index"
+        },
+        {
+            "path": "/api/v1/locales/%id%",
+            "controller": "ride\\web\\rest\\controller\\LocaleController",
+            "action": "detailAction",
+            "methods": "GET",
+            "id": "api.locales.detail"
+        },
+        {
+            "path": "/api/v1/translations",
+            "controller": "ride\\web\\rest\\controller\\TranslationController",
+            "action": "indexAction",
+            "methods": "GET",
+            "id": "api.translations.index"
+        },
+        {
+            "path": "/api/v1/translations",
+            "controller": "ride\\web\\rest\\controller\\TranslationController",
+            "action": "saveAction",
+            "methods": "POST",
+            "id": "api.translations.create"
+        },
+        {
+            "path": "/api/v1/translations",
+            "controller": "ride\\web\\rest\\controller\\TranslationController",
+            "action": "saveAction",
+            "methods": "PATCH",
+            "id": "api.translations.update.bulk"
+        },
+        {
+            "path": "/api/v1/translations",
+            "controller": "ride\\web\\rest\\controller\\TranslationController",
+            "action": "deleteAction",
+            "methods": "DELETE",
+            "id": "api.translations.delete.bulk"
+        },
+        {
+            "path": "/api/v1/translations/%id%",
+            "controller": "ride\\web\\rest\\controller\\TranslationController",
+            "action": "detailAction",
+            "methods": "GET",
+            "id": "api.translations.detail"
+        },
+        {
+            "path": "/api/v1/translations/%id%",
+            "controller": "ride\\web\\rest\\controller\\TranslationController",
+            "action": "saveAction",
+            "methods": "PATCH",
+            "id": "api.translations.update"
+        },
+        {
+            "path": "/api/v1/translations/%id%",
+            "controller": "ride\\web\\rest\\controller\\TranslationController",
+            "action": "deleteAction",
+            "methods": "DELETE",
+            "id": "api.translations.delete"
+        },
+        {
+            "path": "/api/v1/translations/%id%/%relationship%",
+            "controller": "ride\\web\\rest\\controller\\TranslationController",
+            "action": "relatedAction",
+            "methods": "GET",
+            "id": "api.translations.related"
+        },
+        {
+            "path": "/api/v1/translations/%id%/relationship/%relationship%",
+            "controller": "ride\\web\\rest\\controller\\TranslationController",
+            "action": "relationshipAction",
+            "methods": "GET",
+            "id": "api.translations.relationship"
+        }
+    ]
+}
