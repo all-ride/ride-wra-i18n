@@ -2,7 +2,6 @@
     "name": "ride/wra-i18n",
     "description": "I18n JSON API endpoints of a Ride application",
     "license": "MIT",
-    "version": "0.1.0",
     "authors": [
         {
             "name": "Joris Vandeweerd",
@@ -10,14 +9,13 @@
         }
     ],
     "require": {
-        "ride/app-mime": ">=0.2.0",
-        "ride/lib-config": ">=0.1.0",
-        "ride/lib-http": ">=0.3.0",
-        "ride/lib-http-jsonapi": ">=0.2.0",
-        "ride/lib-i18n": ">=0.1.0",
-        "ride/web-i18n": ">=0.1.0",
-        "ride/web": ">=0.10.0",
-        "ride/wra": ">=0.6.0"
+        "ride/app": "^1.0.0",
+        "ride/lib-http": "^1.0.0",
+        "ride/lib-http-jsonapi": "^1.0.0",
+        "ride/lib-i18n": "^1.0.0",
+        "ride/web": "^1.0.0",
+        "ride/web-i18n": "^1.0.0",
+        "ride/wra": "^1.0.0"
     },
     "autoload": {
         "psr-0": {
